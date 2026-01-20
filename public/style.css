@@ -1,0 +1,104 @@
+/* HealthAI Pro - Final Visual Core */
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Global Scrollbar (Modern Thin Style) */
+::-webkit-scrollbar { 
+    width: 5px; 
+}
+::-webkit-scrollbar-track { 
+    background: #050507; 
+}
+::-webkit-scrollbar-thumb { 
+    background: #1e293b; 
+    border-radius: 10px; 
+}
+
+/* Chat Assistant Window Scrollbar */
+.custom-scrollbar::-webkit-scrollbar { 
+    width: 3px; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb { 
+    background: #3b82f6; 
+    border-radius: 10px; 
+}
+
+/* --- Zaroori Real-Time Bars Logic --- */
+#mh-bar, #ph-bar {
+    height: 100%;
+    /* Default initial width */
+    width: 15%; 
+    border-radius: 20px;
+    
+    /* Animation: Jab JS width badlega, toh ye smooth slide karega */
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.8s ease;
+    
+    /* Dynamic Glow Effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bar ke andar ek chamak (shimmer) effect ke liye */
+#mh-bar::after, #ph-bar::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* --- Chat Bubbles Animations --- */
+.chat-bubble, .message-anim { 
+    animation: slideUp 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards; 
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px) scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+/* Styling the AI's "Beautiful" responses */
+.ai-msg h2 {
+    color: #4facfe; /* Light blue for headers */
+    font-size: 1.2rem;
+    margin-top: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.ai-msg strong {
+    color: #ff9a9e; /* Soft red/pink for emphasis */
+    font-weight: 700;
+}
+
+.ai-msg ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.ai-msg li {
+    margin-bottom: 5px;
+    list-style-type: circle;
+}
+
+/* Alert States - Glowing Colors */
+.text-red-glow { color: #ef4444; text-shadow: 0 0 8px rgba(239, 68, 68, 0.4); }
+.text-orange-glow { color: #f97316; text-shadow: 0 0 8px rgba(249, 115, 22, 0.4); }
+.text-green-glow { color: #22c55e; text-shadow: 0 0 8px rgba(34, 197, 94, 0.4); }
