@@ -38,7 +38,7 @@ This project is strictly mapped to **UN SDG 3**:
 ---
 
 ## 🚀 Live Project Access
-* **Live Demo:** [**View HealthAI on Render**](https://healthai-j8ju.onrender.com/)
+* **Live Demo:** [**View HealthAI on Render**](https://healthai-x4b4.onrender.com/)
 * **Resources:** [**HealthAI Resources**](https://drive.google.com/drive/folders/1JUB4s77eTYI1nNo7eTV1Iu63m7eDq851?usp=drive_link)
 
 ---
