@@ -113,15 +113,18 @@ HealthAI/
 ├── server.js               # Backend Server & Gemini AI integration
 └── README.md               # Detailed Project Documentation
 ```
+---
+## 👤 Author
 
-## 📞 Contact
-
-**SAURAV KUMAR**
-
-- GitHub: [@kumsaurav91-droid](https://github.com/kumsaurav91-droid)
-- Linkedin Profile: [@kumsaurav91](https://www.linkedin.com/in/kumsaurav91)
+**Saurav Kumar**
+*Computer Science Engineering *
 
 **⭐ Star this repository if you find it helpful!**
 
+- Gmail: kumsaurav91@gmail.com
+- GitHub: [@kumsaurav91-droid](https://github.com/kumsaurav91-droid)
+- Linkedin Profile: [@kumsaurav91](https://www.linkedin.com/in/kumsaurav91)
 
-// ssss
+---
+
+*Made with ❤️ by Saurav Kumar · © 2026 All Rights Reserved*
